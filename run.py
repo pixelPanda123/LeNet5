@@ -55,7 +55,6 @@ def train(epoch):
         if i % 10 == 0:
             print('Train - Epoch %d, Batch: %d, Loss: %f' % (epoch, i, loss.detach().cpu().item()))
 
-        # Update Visualization
         if viz.check_connection():
             cur_batch_win = viz.line(torch.Tensor(loss_list), torch.Tensor(batch_list),
                                      win=cur_batch_win, name='current_batch_loss',
