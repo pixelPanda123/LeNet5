@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+data/
+*.onnx
+.DS_Store
